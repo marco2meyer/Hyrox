@@ -1,0 +1,804 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HYROX: The Business of Fitness Racing - Wharton Case Study</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <style>
+        :root {
+            --wharton-navy: #011F5B;
+            --wharton-red: #990000;
+            --wharton-light-blue: #6FAADB;
+            --wharton-gray: #737373;
+        }
+        
+        .reveal .slides section {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: var(--wharton-navy);
+            font-weight: bold;
+        }
+        
+        .title-slide {
+            background: linear-gradient(135deg, var(--wharton-navy) 0%, var(--wharton-light-blue) 100%);
+            color: white !important;
+        }
+        
+        .title-slide h1, .title-slide h2, .title-slide h3, .title-slide p {
+            color: white !important;
+        }
+        
+        .wharton-header {
+            background-color: var(--wharton-navy);
+            color: white;
+            padding: 20px;
+            margin: -20px -20px 20px -20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .financial-highlight {
+            background-color: var(--wharton-red);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .metric-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--wharton-red);
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .competitive-table {
+            font-size: 0.8em;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        .competitive-table th {
+            background-color: var(--wharton-navy);
+            color: white;
+            padding: 12px;
+        }
+        
+        .competitive-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .swot-box {
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .strengths { background-color: #28a745; }
+        .weaknesses { background-color: #dc3545; }
+        .opportunities { background-color: #007bff; }
+        .threats { background-color: #ffc107; color: black; }
+        
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--wharton-navy);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            width: 45%;
+        }
+        
+        .timeline-item.left {
+            margin-right: 55%;
+        }
+        
+        .timeline-item.right {
+            margin-left: 55%;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: var(--wharton-red);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .timeline-item.left::before {
+            right: -11px;
+        }
+        
+        .timeline-item.right::before {
+            left: -11px;
+        }
+        
+        .small-text {
+            font-size: 0.7em;
+        }
+        
+        .highlight-stat {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--wharton-red);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section class="title-slide">
+                <h1>HYROX</h1>
+                <h2>The Business of Fitness Racing</h2>
+                <h3>A Comprehensive Case Study</h3>
+                <br>
+                <p><strong>The Wharton School</strong><br>
+                University of Pennsylvania</p>
+                <p class="small-text">March 2026</p>
+            </section>
+
+            <!-- Executive Summary -->
+            <section>
+                <div class="wharton-header">Executive Summary</div>
+                <div class="metric-box">
+                    <div class="highlight-stat">$140M</div>
+                    <p><strong>Annual Revenue (2025)</strong></p>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <h4>Key Metrics</h4>
+                        <ul>
+                            <li>650,000+ annual participants</li>
+                            <li>83 events globally (2025)</li>
+                            <li>100% YoY growth for 2 years</li>
+                            <li>$0 spent on paid marketing</li>
+                            <li>11 countries, 30+ cities</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Business Model</h4>
+                        <ul>
+                            <li>Standardized fitness racing format</li>
+                            <li>Mass participation events</li>
+                            <li>Multiple revenue streams</li>
+                            <li>Asset-light operations</li>
+                            <li>Olympic aspirations by 2032</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Overview -->
+            <section>
+                <div class="wharton-header">Company Overview</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Founding & Vision</h4>
+                        <p><strong>Founded:</strong> 2017, Hamburg, Germany</p>
+                        <p><strong>Founders:</strong></p>
+                        <ul>
+                            <li><strong>Christian Toetzke</strong> - Mass participation event veteran</li>
+                            <li><strong>Moritz Fürste</strong> - 2x Olympic gold medalist (Hockey)</li>
+                            <li><strong>Michael Trautmann</strong> - Marketing expert</li>
+                        </ul>
+                        
+                        <div class="financial-highlight">
+                            Mission: "Create the golf course for fitness people" - Making fitness a competitive sport
+                        </div>
+                    </div>
+                    <div>
+                        <h4>The Problem They Solved</h4>
+                        <p>In Germany, 52% of gym-goers call 'fitness' their main sport, but fitness wasn't actually a sport with competitive events.</p>
+                        
+                        <h4>The Solution</h4>
+                        <p><strong>Standardized Format:</strong> 8 × 1km runs + 8 functional workout stations</p>
+                        <p><strong>Measurable Performance:</strong> Precise timing and rankings</p>
+                        <p><strong>Mass Participation:</strong> Inclusive for all fitness levels</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Model Analysis -->
+            <section>
+                <div class="wharton-header">Business Model Analysis</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Revenue Streams (Est. 2025)</h4>
+                        <div class="chart-container">
+                            <svg width="300" height="200" viewBox="0 0 300 200">
+                                <!-- Pie chart for revenue breakdown -->
+                                <circle cx="100" cy="100" r="80" fill="#011F5B" stroke="white" stroke-width="2"/>
+                                <path d="M 100,20 A 80,80 0 0,1 180,100 L 100,100 Z" fill="#990000"/>
+                                <path d="M 180,100 A 80,80 0 0,1 141.42,158.28 L 100,100 Z" fill="#6FAADB"/>
+                                <path d="M 141.42,158.28 A 80,80 0 0,1 58.58,158.28 L 100,100 Z" fill="#737373"/>
+                                <path d="M 58.58,158.28 A 80,80 0 1,1 100,20 L 100,100 Z" fill="#FFC107"/>
+                                
+                                <text x="220" y="40" font-size="12">Entry Fees (69%): $96.2M</text>
+                                <text x="220" y="60" font-size="12">Merchandise (12%): $16.8M</text>
+                                <text x="220" y="80" font-size="12">Sponsorship (10%): $14M</text>
+                                <text x="220" y="100" font-size="12">Gym Licensing (5%): $7M</text>
+                                <text x="220" y="120" font-size="12">Photos/Media (4%): $5.6M</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Operational Excellence</h4>
+                        <div class="metric-box">
+                            <strong>Mobile Operations:</strong> 10 global truck setups, 36-48 hour event setup
+                        </div>
+                        <div class="metric-box">
+                            <strong>Breakeven:</strong> ~1,500 participants per event<br>
+                            <strong>Average:</strong> 7,800 participants per event
+                        </div>
+                        <div class="metric-box">
+                            <strong>Estimated Margins:</strong><br>
+                            Gross: ~80%<br>
+                            EBITDA: 30-40%
+                        </div>
+                        
+                        <h4>Entry Fee Structure</h4>
+                        <ul>
+                            <li>USA: $175-$180</li>
+                            <li>UK: £125 (~$159)</li>
+                            <li>Europe: €124-€140 (~$142-$161)</li>
+                            <li>Canada: CA$180 (~$132)</li>
+                            <li>Australia: A$209 (~$138)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Financial Performance -->
+            <section>
+                <div class="wharton-header">Financial Performance</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Revenue Growth Trajectory</h4>
+                        <div class="chart-container">
+                            <svg width="350" height="250" viewBox="0 0 350 250">
+                                <!-- Revenue growth chart -->
+                                <text x="175" y="20" font-size="14" font-weight="bold" text-anchor="middle">Revenue Growth (Estimated)</text>
+                                
+                                <!-- Y-axis -->
+                                <line x1="50" y1="50" x2="50" y2="200" stroke="black" stroke-width="2"/>
+                                <text x="25" y="55" font-size="10">$140M</text>
+                                <text x="25" y="85" font-size="10">$100M</text>
+                                <text x="25" y="115" font-size="10">$60M</text>
+                                <text x="25" y="145" font-size="10">$30M</text>
+                                <text x="25" y="175" font-size="10">$10M</text>
+                                <text x="35" y="205" font-size="10">$0</text>
+                                
+                                <!-- X-axis -->
+                                <line x1="50" y1="200" x2="320" y2="200" stroke="black" stroke-width="2"/>
+                                <text x="70" y="215" font-size="10">2018</text>
+                                <text x="120" y="215" font-size="10">2020</text>
+                                <text x="170" y="215" font-size="10">2022</text>
+                                <text x="220" y="215" font-size="10">2024</text>
+                                <text x="270" y="215" font-size="10">2025</text>
+                                
+                                <!-- Growth curve -->
+                                <polyline points="70,190 120,180 170,140 220,80 270,50" 
+                                         fill="none" stroke="#990000" stroke-width="3"/>
+                                
+                                <!-- Data points -->
+                                <circle cx="70" cy="190" r="4" fill="#011F5B"/>
+                                <circle cx="120" cy="180" r="4" fill="#011F5B"/>
+                                <circle cx="170" cy="140" r="4" fill="#011F5B"/>
+                                <circle cx="220" cy="80" r="4" fill="#011F5B"/>
+                                <circle cx="270" cy="50" r="4" fill="#990000"/>
+                                
+                                <text x="270" y="40" font-size="10" font-weight="bold">$140M</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Participant Growth</h4>
+                        <div class="financial-highlight">
+                            2025: 650,000+ participants<br>
+                            100% YoY growth (2023-2025)
+                        </div>
+                        
+                        <h4>Key Financial Metrics</h4>
+                        <div class="metric-box">
+                            <strong>2021 Parent Company (Upsolut Sports):</strong><br>
+                            Net Profit Margin: 26%
+                        </div>
+                        <div class="metric-box">
+                            <strong>Average Revenue Per Participant:</strong><br>
+                            ~$215 (including all revenue streams)
+                        </div>
+                        <div class="metric-box">
+                            <strong>Prize Money (2024):</strong><br>
+                            $225,000 across elite events<br>
+                            World Championship: $150,000 total purse
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Analysis -->
+            <section>
+                <div class="wharton-header">Market Analysis</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Total Addressable Market</h4>
+                        <div class="metric-box">
+                            <strong>Global Fitness Industry:</strong> $257B (2024)<br>
+                            Growing at 5.8% CAGR
+                        </div>
+                        <div class="metric-box">
+                            <strong>Interactive/Competitive Fitness:</strong> $6.22B (2025)<br>
+                            Growing at 8.61% CAGR
+                        </div>
+                        <div class="metric-box">
+                            <strong>Target Market Comparison:</strong><br>
+                            CrossFit: 4M global participants<br>
+                            HYROX: 650K participants (2025)
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Market Positioning</h4>
+                        <div class="chart-container">
+                            <svg width="300" height="250" viewBox="0 0 300 250">
+                                <!-- Market positioning matrix -->
+                                <text x="150" y="15" font-size="12" font-weight="bold" text-anchor="middle">Competitive Positioning</text>
+                                
+                                <!-- Axes -->
+                                <line x1="50" y1="30" x2="50" y2="220" stroke="black" stroke-width="2"/>
+                                <line x1="50" y1="220" x2="280" y2="220" stroke="black" stroke-width="2"/>
+                                
+                                <!-- Axis labels -->
+                                <text x="15" y="125" font-size="10" transform="rotate(-90, 15, 125)">Accessibility</text>
+                                <text x="165" y="240" font-size="10" text-anchor="middle">Standardization</text>
+                                
+                                <!-- High/Low labels -->
+                                <text x="30" y="40" font-size="8">High</text>
+                                <text x="30" y="215" font-size="8">Low</text>
+                                <text x="55" y="235" font-size="8">Low</text>
+                                <text x="260" y="235" font-size="8">High</text>
+                                
+                                <!-- Competitors -->
+                                <circle cx="200" cy="80" r="8" fill="#990000"/>
+                                <text x="210" y="85" font-size="10" font-weight="bold">HYROX</text>
+                                
+                                <circle cx="120" cy="120" r="6" fill="#6FAADB"/>
+                                <text x="80" y="135" font-size="9">CrossFit</text>
+                                
+                                <circle cx="180" cy="160" r="6" fill="#737373"/>
+                                <text x="135" y="175" font-size="9">Spartan Race</text>
+                                
+                                <circle cx="100" cy="180" r="6" fill="#FFC107"/>
+                                <text x="50" y="195" font-size="9">Tough Mudder</text>
+                                
+                                <circle cx="220" cy="200" r="6" fill="#28A745"/>
+                                <text x="185" y="210" font-size="9">Marathons</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Competitive Landscape -->
+            <section>
+                <div class="wharton-header">Competitive Landscape</div>
+                <table class="competitive-table">
+                    <thead>
+                        <tr>
+                            <th>Competitor</th>
+                            <th>Format</th>
+                            <th>Accessibility</th>
+                            <th>Standardization</th>
+                            <th>Market Size</th>
+                            <th>Key Differentiator</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>HYROX</strong></td>
+                            <td>8×1km + 8 stations</td>
+                            <td>Very High</td>
+                            <td>Very High</td>
+                            <td>650K participants</td>
+                            <td>Standardized, measurable, indoor</td>
+                        </tr>
+                        <tr>
+                            <td>CrossFit Games</td>
+                            <td>Varied workouts</td>
+                            <td>Medium</td>
+                            <td>Low</td>
+                            <td>4M participants</td>
+                            <td>Training methodology brand</td>
+                        </tr>
+                        <tr>
+                            <td>Spartan Race</td>
+                            <td>Obstacle course</td>
+                            <td>Medium</td>
+                            <td>Medium</td>
+                            <td>1M+ participants</td>
+                            <td>Outdoor, adventure-focused</td>
+                        </tr>
+                        <tr>
+                            <td>Tough Mudder</td>
+                            <td>Team obstacles</td>
+                            <td>High</td>
+                            <td>Low</td>
+                            <td>500K+ participants</td>
+                            <td>Team-based, fun-focused</td>
+                        </tr>
+                        <tr>
+                            <td>Marathons</td>
+                            <td>26.2 mile run</td>
+                            <td>Medium</td>
+                            <td>Very High</td>
+                            <td>50M+ globally</td>
+                            <td>Pure running, established tradition</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="small-text"><strong>Key Insight:</strong> HYROX uniquely combines high accessibility with high standardization, creating a "blue ocean" position in the fitness racing market.</p>
+            </section>
+
+            <!-- Growth Strategy -->
+            <section>
+                <div class="wharton-header">Growth Strategy</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Geographic Expansion</h4>
+                        <div class="metric-box">
+                            <strong>Current Footprint:</strong><br>
+                            11 countries, 30+ cities<br>
+                            83 events (2025) → 100+ events (2026)
+                        </div>
+                        
+                        <h4>Target Markets</h4>
+                        <ul>
+                            <li><strong>Established:</strong> Germany, UK, USA</li>
+                            <li><strong>Expanding:</strong> Australia, Canada, France</li>
+                            <li><strong>Emerging:</strong> Asia (India launched), South America</li>
+                        </ul>
+                        
+                        <h4>Gym Affiliate Network</h4>
+                        <div class="financial-highlight">
+                            10,000+ gym affiliations globally<br>
+                            (Doubled since December 2024)
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Strategic Partnerships</h4>
+                        <div class="metric-box">
+                            <strong>PUMA Partnership (2017-2030):</strong><br>
+                            Official apparel & footwear partner<br>
+                            Co-developed training shoes
+                        </div>
+                        
+                        <h4>Additional Partners</h4>
+                        <ul>
+                            <li><strong>BYD:</strong> Electric vehicle partner</li>
+                            <li><strong>Amazfit:</strong> Wearable technology</li>
+                            <li><strong>MyProtein:</strong> Nutrition supplements</li>
+                            <li><strong>F45:</strong> Gym franchise collaboration</li>
+                        </ul>
+                        
+                        <h4>Digital Strategy</h4>
+                        <div class="metric-box">
+                            <strong>Social Media Growth:</strong><br>
+                            450K+ Instagram followers<br>
+                            User-generated content driving organic growth
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SWOT Analysis -->
+            <section>
+                <div class="wharton-header">SWOT Analysis</div>
+                <div class="swot-grid">
+                    <div class="swot-box strengths">
+                        <h4>STRENGTHS</h4>
+                        <ul>
+                            <li>Standardized, measurable format</li>
+                            <li>High accessibility (all fitness levels)</li>
+                            <li>Strong founder credentials</li>
+                            <li>100% organic growth (no paid ads)</li>
+                            <li>High profit margins (30-40% EBITDA)</li>
+                            <li>Asset-light mobile operations</li>
+                            <li>Strong brand partnerships (PUMA)</li>
+                        </ul>
+                    </div>
+                    <div class="swot-box weaknesses">
+                        <h4>WEAKNESSES</h4>
+                        <ul>
+                            <li>Limited format variation</li>
+                            <li>High dependence on founders</li>
+                            <li>Premium pricing in some markets</li>
+                            <li>Equipment-intensive operations</li>
+                            <li>Relatively new brand (2017)</li>
+                            <li>Limited intellectual property moats</li>
+                        </ul>
+                    </div>
+                    <div class="swot-box opportunities">
+                        <h4>OPPORTUNITIES</h4>
+                        <ul>
+                            <li>Olympic inclusion by 2032</li>
+                            <li>Asian market expansion</li>
+                            <li>Franchise/licensing model scaling</li>
+                            <li>Media rights monetization</li>
+                            <li>Professional athlete circuit</li>
+                            <li>Corporate wellness partnerships</li>
+                            <li>Virtual/hybrid racing formats</li>
+                        </ul>
+                    </div>
+                    <div class="swot-box threats">
+                        <h4>THREATS</h4>
+                        <ul>
+                            <li>Well-funded competitors entering</li>
+                            <li>Market saturation in key cities</li>
+                            <li>Economic downturn affecting discretionary spending</li>
+                            <li>Operational complexity scaling</li>
+                            <li>Venue availability/costs</li>
+                            <li>Potential format replication</li>
+                            <li>Retention/repeat participation rates</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Growth Timeline -->
+            <section>
+                <div class="wharton-header">Growth Timeline</div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <h4>2015-2017: Foundation</h4>
+                        <p>Founders identify market gap, develop standardized format, launch first race in Hamburg with 650 participants</p>
+                    </div>
+                    <div class="timeline-item right">
+                        <h4>2018-2020: European Expansion</h4>
+                        <p>Rapid growth across Germany, expansion to UK and other European markets. PUMA partnership begins.</p>
+                    </div>
+                    <div class="timeline-item left">
+                        <h4>2021-2022: Global Scaling</h4>
+                        <p>US market entry, 90,000 annual participants. Parent company shows 26% net profit margins.</p>
+                    </div>
+                    <div class="timeline-item right">
+                        <h4>2023-2024: Mainstream Adoption</h4>
+                        <p>100% YoY growth begins. Major brand partnerships. 300,000+ participants across 81 races.</p>
+                    </div>
+                    <div class="timeline-item left">
+                        <h4>2025-2026: Market Leadership</h4>
+                        <p>650,000+ participants, $140M revenue, 83 events, 10,000+ gym affiliates. Olympic bid preparations.</p>
+                    </div>
+                    <div class="timeline-item right">
+                        <h4>2027-2032: Olympic Vision</h4>
+                        <p>Professional circuit development, media rights expansion, Olympic inclusion campaign for Brisbane 2032.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Challenges & Risks -->
+            <section>
+                <div class="wharton-header">Challenges & Risks</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Operational Challenges</h4>
+                        <div class="metric-box">
+                            <strong>Scalability Constraints:</strong><br>
+                            Equipment-intensive operations require significant capital investment for expansion
+                        </div>
+                        <div class="metric-box">
+                            <strong>Venue Dependencies:</strong><br>
+                            Need large indoor spaces in prime locations, subject to availability and cost inflation
+                        </div>
+                        
+                        <h4>Market Risks</h4>
+                        <ul>
+                            <li><strong>Economic Sensitivity:</strong> Entry fees ($130-180) are discretionary spending</li>
+                            <li><strong>Retention Unknown:</strong> Long-term repeat participation rates unclear</li>
+                            <li><strong>Geographic Variability:</strong> Different pricing tolerance across markets</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Competitive Threats</h4>
+                        <div class="metric-box">
+                            <strong>Format Replication:</strong><br>
+                            Limited IP protection on race format - easy to copy core concept
+                        </div>
+                        <div class="metric-box">
+                            <strong>Market Saturation:</strong><br>
+                            Key markets (London, NYC) may reach capacity limits for premium-priced events
+                        </div>
+                        
+                        <h4>Strategic Risks</h4>
+                        <ul>
+                            <li><strong>Founder Dependence:</strong> High reliance on Toetzke and Fürste for vision and credibility</li>
+                            <li><strong>Single Format Risk:</strong> Limited diversification compared to multi-format competitors</li>
+                            <li><strong>Olympic Uncertainty:</strong> IOC inclusion is not guaranteed despite aspirations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Future Outlook -->
+            <section>
+                <div class="wharton-header">Future Outlook</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Growth Potential</h4>
+                        <div class="financial-highlight">
+                            Bull Case: 3-5x growth potential<br>
+                            Target: 2-3M participants by 2030
+                        </div>
+                        
+                        <h4>Revenue Projections</h4>
+                        <div class="metric-box">
+                            <strong>2026-2028:</strong> $200-400M revenue<br>
+                            <strong>Path to $1B:</strong> With Olympic inclusion + global scale
+                        </div>
+                        
+                        <h4>Olympic Strategy Impact</h4>
+                        <p>If successful in Olympic inclusion by 2032:</p>
+                        <ul>
+                            <li>Massive global exposure and legitimacy</li>
+                            <li>Media rights monetization potential</li>
+                            <li>Professional athlete ecosystem development</li>
+                            <li>Government and federation support</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Exit Strategy Scenarios</h4>
+                        <div class="metric-box">
+                            <strong>Strategic Acquisition:</strong><br>
+                            Sports media companies (ESPN, IMG)<br>
+                            Fitness brands (Nike, Adidas)<br>
+                            Event companies (Live Nation)
+                        </div>
+                        <div class="metric-box">
+                            <strong>IPO Potential:</strong><br>
+                            Comparable: Ironman acquired for $650M (13x EBITDA)<br>
+                            HYROX at similar multiple: ~$1.8B valuation
+                        </div>
+                        
+                        <h4>Innovation Opportunities</h4>
+                        <ul>
+                            <li><strong>Virtual Racing:</strong> Hybrid digital/physical events</li>
+                            <li><strong>Corporate Wellness:</strong> B2B market expansion</li>
+                            <li><strong>Youth Programs:</strong> School and university competitions</li>
+                            <li><strong>Adaptive Sports:</strong> Paralympic-style divisions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Takeaways -->
+            <section>
+                <div class="wharton-header">Key Takeaways</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4>Strategic Success Factors</h4>
+                        <div class="metric-box">
+                            <strong>Product-Market Fit:</strong> Identified and filled a specific gap in the fitness market with a standardized, measurable format
+                        </div>
+                        <div class="metric-box">
+                            <strong>Operational Excellence:</strong> Scalable, asset-light model with standardized operations across global markets
+                        </div>
+                        <div class="metric-box">
+                            <strong>Community Building:</strong> Created a strong brand identity and community without paid marketing through user-generated content
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Investment Thesis</h4>
+                        <div class="financial-highlight">
+                            HYROX represents a compelling case study in creating a new sports category through standardization, accessibility, and community building
+                        </div>
+                        
+                        <h4>Critical Questions</h4>
+                        <ul>
+                            <li>Can they maintain growth without market saturation?</li>
+                            <li>Will the Olympic strategy materialize?</li>
+                            <li>How defensible is their competitive position?</li>
+                            <li>What are the long-term retention rates?</li>
+                        </ul>
+                        
+                        <div class="metric-box">
+                            <strong>Valuation Range:</strong><br>
+                            Conservative: $500M - $1B<br>
+                            Bull Case: $1.5B - $3B (with Olympic inclusion)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sources & References -->
+            <section>
+                <div class="wharton-header">Sources & References</div>
+                <div style="columns: 2; column-gap: 30px; font-size: 0.7em;">
+                    <h4>Primary Sources</h4>
+                    <ul>
+                        <li><a href="https://hyrox.com/the-history/">HYROX Official Website - Company History</a></li>
+                        <li><a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial - HYROX $140M Business Analysis</a></li>
+                        <li><a href="https://boxlifemagazine.com/hyrox-in-the-olympics/">BoxLife Magazine - HYROX Olympic Aspirations</a></li>
+                        <li><a href="https://athletechnews.com/ceo-corner-hyrox-race-christian-toetzke-exclusive-interview/">Athletech News - CEO Interview</a></li>
+                    </ul>
+                    
+                    <h4>Financial Data</h4>
+                    <ul>
+                        <li><a href="https://www.bundesanzeiger.de/pub/en/search-result">German Federal Gazette - Upsolut Sports GmbH</a></li>
+                        <li><a href="https://hybridfitnessmedia.com/2025/11/04/hyrox-ticket-price-comparison-2025/">Hybrid Fitness Media - Pricing Analysis</a></li>
+                        <li><a href="https://www.reddit.com/r/hyrox/comments/1la77dj/the_economics_of_hyrox/">Reddit Community - Economic Analysis</a></li>
+                    </ul>
+                    
+                    <h4>Market Analysis</h4>
+                    <ul>
+                        <li><a href="https://www.healthandfitness.org/2025-global-fitness-industry-report-shows-record-growth-and-whats-next-for-the-market/">Health & Fitness Association - Industry Report</a></li>
+                        <li><a href="https://www.cognitivemarketresearch.com/fitness-market-report">Cognitive Market Research - Fitness Market</a></li>
+                        <li><a href="https://www.exercise.com/grow/crossfit-statistics/">Exercise.com - CrossFit Statistics</a></li>
+                    </ul>
+                    
+                    <h4>Partnership & Growth</h4>
+                    <ul>
+                        <li><a href="https://about.puma.com/en/newsroom/corporate-news/2025/01-10-2025-puma-announces-early-renewal-its-long-term-partnership">PUMA Official - Partnership Extension</a></li>
+                        <li><a href="https://endurance.biz/2025/industry-news/puma-early-renews-and-extends-hyrox-partnership-until-2030/">Endurance.biz - Partnership Analysis</a></li>
+                        <li><a href="https://runningmagazine.ca/the-scene/hyrox-pushing-to-become-an-olympic-sport/">Canadian Running - Olympic Push</a></li>
+                    </ul>
+                    
+                    <h4>Competitive Landscape</h4>
+                    <ul>
+                        <li><a href="https://www.crossfit.com/essentials/crossfit-vs-hyrox">CrossFit Official - HYROX Relationship</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Hyrox">Wikipedia - HYROX Overview</a></li>
+                        <li>Various Reddit communities and fitness industry publications</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade'
+        });
+    </script>
+</body>
+</html>
