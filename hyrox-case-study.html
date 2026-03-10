@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HYROX Case Study | Wharton Business School</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #f5f5f5; color: #1a1a2e; }
+  .slide {
+    width: 100%; max-width: 1100px; margin: 30px auto; background: #fff;
+    padding: 60px 70px; min-height: 680px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 4px; page-break-after: always; position: relative;
+    display: flex; flex-direction: column; justify-content: flex-start;
+  }
+  .slide.cover {
+    background: #1a1a2e; color: #fff; text-align: center;
+    justify-content: center; align-items: center; min-height: 700px;
+  }
+  .slide.cover h1 { border-bottom: none; color: #fff; font-size: 3em; margin-bottom: 10px; }
+  .slide.cover h2 { color: #c8102e; font-size: 1.5em; margin-bottom: 8px; font-weight: normal; }
+  .slide.cover h3 { color: #aaa; font-size: 1.1em; font-weight: normal; margin-bottom: 30px; }
+  .slide.cover p { color: #888; font-size: 0.95em; margin-top: 5px; }
+  h1 { font-size: 1.8em; color: #1a1a2e; border-bottom: 3px solid #c8102e; padding-bottom: 10px; margin-bottom: 25px; }
+  h2 { color: #c8102e; font-size: 1.25em; margin: 18px 0 10px 0; }
+  h3 { color: #333; font-size: 1.05em; margin: 14px 0 8px 0; }
+  p, li { font-size: 0.92em; line-height: 1.65; margin-bottom: 8px; }
+  ul, ol { padding-left: 22px; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.82em; }
+  th { background: #1a1a2e; color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+  td { padding: 9px 12px; border: 1px solid #ddd; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  blockquote {
+    border-left: 4px solid #c8102e; padding: 12px 20px; margin: 16px 0;
+    font-style: italic; color: #555; background: #fafafa;
+  }
+  .page-num {
+    position: absolute; bottom: 20px; right: 30px; font-size: 0.75em; color: #aaa;
+  }
+  pre {
+    background: #f8f8f8; padding: 18px; border-radius: 4px; font-family: 'Courier New', monospace;
+    font-size: 0.78em; line-height: 1.5; overflow-x: auto; margin: 12px 0;
+  }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .highlight { background: #fffde7; padding: 12px 16px; border-radius: 4px; margin: 10px 0; border-left: 4px solid #ffc107; }
+  a { color: #c8102e; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .source { font-size: 0.7em; color: #999; margin-top: auto; padding-top: 15px; }
+  .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .swot-grid > div { padding: 14px; font-size: 0.82em; }
+  .swot-grid .s { background: #e8f5e9; border: 1px solid #c8e6c9; }
+  .swot-grid .w { background: #fff3e0; border: 1px solid #ffe0b2; }
+  .swot-grid .o { background: #e3f2fd; border: 1px solid #bbdefb; }
+  .swot-grid .t { background: #fce4ec; border: 1px solid #f8bbd0; }
+  .swot-grid h3 { margin-top: 0; }
+  .bar { display: flex; align-items: center; margin: 4px 0; }
+  .bar-label { width: 90px; font-size: 0.8em; font-weight: 600; }
+  .bar-track { flex: 1; height: 22px; background: #eee; border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; display: flex; align-items: center; padding-left: 8px; color: #fff; font-size: 0.72em; font-weight: 600; }
+
+  @media print {
+    body { background: #fff; }
+    .slide { box-shadow: none; margin: 0; page-break-after: always; border: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: Cover -->
+<div class="slide cover">
+  <h1>HYROX</h1>
+  <h2>From Hamburg Gym to $140M Global Fitness Empire</h2>
+  <h3>A Wharton Business School Case Study</h3>
+  <p><strong>The Wharton School | University of Pennsylvania</strong></p>
+  <p>March 2026</p>
+</div>
+
+<!-- SLIDE 2: TOC -->
+<div class="slide">
+  <h1>Table of Contents</h1>
+  <div class="two-col">
+    <ol>
+      <li>Executive Summary</li>
+      <li>Company Overview &amp; Founding Story</li>
+      <li>The Product: Fitness Racing</li>
+      <li>Business Model &amp; Revenue Streams</li>
+      <li>Financial Analysis</li>
+      <li>Market Opportunity &amp; Industry Context</li>
+      <li>Competitive Landscape</li>
+    </ol>
+    <ol start="8">
+      <li>Growth Trajectory &amp; Key Metrics</li>
+      <li>Marketing Strategy: Zero Paid Spend</li>
+      <li>Corporate Structure &amp; Ownership</li>
+      <li>Strategic Partnerships</li>
+      <li>Future Strategy &amp; Olympic Ambitions</li>
+      <li>SWOT Analysis</li>
+      <li>Discussion Questions</li>
+    </ol>
+  </div>
+  <span class="page-num">2</span>
+</div>
+
+<!-- SLIDE 3: Executive Summary -->
+<div class="slide">
+  <h1>Executive Summary</h1>
+  <p>HYROX is a globally standardized indoor fitness race founded in 2017 that has grown from 2,711 finishers at 5 events to <strong>650,000+ participants across 83 events in 30 countries</strong> by 2025 &mdash; generating approximately <strong>$140 million in annual revenue</strong>.</p>
+  <div class="highlight">
+    <strong>Key Thesis:</strong> HYROX identified a white-space opportunity at the intersection of running and gym fitness, creating an entirely new sport category &mdash; "Fitness Racing" &mdash; with a repeatable, franchise-like event model that achieves <strong>30&ndash;40% estimated EBITDA margins</strong> while spending <strong>$0 on paid marketing</strong>.
+  </div>
+  <p>The case examines how two founders &mdash; an Olympic athlete and a sports-events veteran &mdash; built a category-defining business through product standardization, community-driven virality, and strategic corporate ownership under Infront Sports &amp; Media (Wanda Group).</p>
+  <div class="source">Sources: <a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial</a>, <a href="https://www.smartcompany.com.au/finance/financial-teardown-hyrox-turned-training-140-million-global-sport/">SmartCompany</a></div>
+  <span class="page-num">3</span>
+</div>
+
+<!-- SLIDE 4: Company Overview -->
+<div class="slide">
+  <h1>Company Overview</h1>
+  <table>
+    <tr><td style="width:35%; font-weight:600;">Founded</td><td>2017, Hamburg, Germany</td></tr>
+    <tr><td style="font-weight:600;">Founders</td><td>Moritz F&uuml;rste (3x World Champion, Olympic Medalist) &amp; Christian Toetzke (cycling, marathon &amp; triathlon events veteran)</td></tr>
+    <tr><td style="font-weight:600;">Headquarters</td><td>Hamburg, Germany</td></tr>
+    <tr><td style="font-weight:600;">Employees</td><td>~231 (51% YoY growth)</td></tr>
+    <tr><td style="font-weight:600;">Majority Owner</td><td>Infront Sports &amp; Media (Wanda Group), since October 2022</td></tr>
+    <tr><td style="font-weight:600;">2025 Revenue</td><td>~$140 million (estimated)</td></tr>
+    <tr><td style="font-weight:600;">2025 Participants</td><td>650,000+ across 83 events</td></tr>
+    <tr><td style="font-weight:600;">Affiliated Gyms</td><td>5,000+ worldwide</td></tr>
+    <tr><td style="font-weight:600;">Countries</td><td>30+</td></tr>
+  </table>
+  <div class="source">Sources: <a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial</a>, <a href="https://www.infront.sport/blog/participation-sports/hyrox-the-meteoric-rise-of-a-global-fitness-racing-phenomenon">Infront Sports</a></div>
+  <span class="page-num">4</span>
+</div>
+
+<!-- SLIDE 5: Founding Insight -->
+<div class="slide">
+  <h1>The Founding Insight</h1>
+  <blockquote>"In Germany, 52% of gym-goers call 'fitness' their main sport. But fitness isn't a sport in and of itself."<br>&mdash; Moritz F&uuml;rste, Co-Founder</blockquote>
+  <p><strong>The Gap:</strong> Millions of people both run and lift weights, but there was no structured competitive event for them &mdash; no "marathon equivalent" for the everyday gym-goer.</p>
+  <h2>The Founders' Backgrounds</h2>
+  <ul>
+    <li><strong>Moritz F&uuml;rste</strong> &mdash; Professional hockey player, 2x Olympic gold medalist. Recognized latent demand from his own cross-training experience.</li>
+    <li><strong>Christian Toetzke</strong> &mdash; Decades organizing cycling, marathon, and triathlon events globally. Deep expertise in event logistics and scaling.</li>
+  </ul>
+  <p><strong>First Event:</strong> October 20, 2018, Leipzig Trade Fair, Germany</p>
+  <div class="highlight"><strong>Key Design Principle:</strong> Accessible to every body &mdash; over 99% of first-time racers complete their HYROX event.</div>
+  <div class="source">Sources: <a href="https://hyrox.com/the-history/">HYROX History</a>, <a href="https://hybridfitnessmedia.com/2025/01/24/hyrox-growth-and-expansion-2018-present/">Hybrid Fitness Media</a></div>
+  <span class="page-num">5</span>
+</div>
+
+<!-- SLIDE 6: The Race Format -->
+<div class="slide">
+  <h1>The Product: The HYROX Race Format</h1>
+  <p><strong>Structure:</strong> 8 &times; (1km Run + 1 Functional Workout Station) = 8km running + 8 stations</p>
+  <table>
+    <tr><th>Station</th><th>Exercise</th><th>Distance / Reps</th></tr>
+    <tr><td>1</td><td>Ski Erg</td><td>1,000m</td></tr>
+    <tr><td>2</td><td>Sled Push</td><td>50m</td></tr>
+    <tr><td>3</td><td>Sled Pull</td><td>50m</td></tr>
+    <tr><td>4</td><td>Burpee Broad Jumps</td><td>80m</td></tr>
+    <tr><td>5</td><td>Rowing</td><td>1,000m</td></tr>
+    <tr><td>6</td><td>Farmers Carry</td><td>200m</td></tr>
+    <tr><td>7</td><td>Sandbag Lunges</td><td>100m</td></tr>
+    <tr><td>8</td><td>Wall Balls</td><td>75&ndash;100 reps</td></tr>
+  </table>
+  <p><strong>Divisions:</strong> Individual (Men/Women, Open/Pro), Doubles, Relay (4-person), Adaptive &bull; <strong>Age Groups:</strong> Under-24 to 70+</p>
+  <div class="source">Sources: <a href="https://hyrox.com/the-fitness-race/">HYROX Official</a>, <a href="https://www.redbull.com/us-en/hyrox-exercise-stations-guide">Red Bull</a></div>
+  <span class="page-num">6</span>
+</div>
+
+<!-- SLIDE 7: Why Standardization Matters -->
+<div class="slide">
+  <h1>Why Standardization Matters</h1>
+  <p>HYROX's critical strategic decision: every race, everywhere in the world, uses the <strong>exact same format, distances, and weights</strong>.</p>
+  <h2>This Creates:</h2>
+  <ol>
+    <li><strong>Global Comparability</strong> &mdash; A time in Tokyo can be directly compared to a time in New York</li>
+    <li><strong>Training Specificity</strong> &mdash; Athletes know exactly what to prepare for (unlike CrossFit's "unknown and unknowable")</li>
+    <li><strong>Repeat Participation</strong> &mdash; Measurable improvement drives return rates and engagement</li>
+    <li><strong>Simplified Operations</strong> &mdash; One format = scalable logistics across 80+ cities</li>
+    <li><strong>Community Benchmarking</strong> &mdash; Leaderboards, age-group rankings, and personal records create ongoing engagement</li>
+  </ol>
+  <blockquote>Unlike Spartan Race (variable terrain/obstacles) or CrossFit Games (changing workouts), HYROX is the "marathon of fitness" &mdash; a fixed, repeatable benchmark.</blockquote>
+  <span class="page-num">7</span>
+</div>
+
+<!-- SLIDE 8: Business Model -->
+<div class="slide">
+  <h1>Business Model &amp; Revenue Streams</h1>
+  <div class="two-col">
+    <div>
+      <h2>1. Race Entry Fees (Primary)</h2>
+      <ul>
+        <li>~$75&ndash;$120 per participant</li>
+        <li>650,000 participants in 2025</li>
+        <li>NYC sold out in <strong>40 minutes</strong></li>
+        <li>London: 70K applicants for 16K slots</li>
+      </ul>
+      <h2>2. Gym Affiliations</h2>
+      <ul>
+        <li>$1,500/year per gym</li>
+        <li>5,000 affiliated gyms = ~$7.5M recurring</li>
+        <li>3 tiers: Performance Centers, Training Clubs, Performance Academy</li>
+      </ul>
+    </div>
+    <div>
+      <h2>3. Sponsorships</h2>
+      <ul>
+        <li><strong>PUMA:</strong> Global apparel (2024&ndash;2027)</li>
+        <li><strong>Red Bull:</strong> Energy partner since S3</li>
+        <li><strong>Peloton:</strong> Training content partnership</li>
+      </ul>
+      <h2>4. Ancillary Revenue</h2>
+      <ul>
+        <li>70% of participants buy photo packages</li>
+        <li>Spectator tickets (7,000 paid fans at NYC)</li>
+        <li>Merchandise &amp; branded gear</li>
+      </ul>
+    </div>
+  </div>
+  <div class="source">Sources: <a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial</a>, <a href="https://www.lawrencestephens.com/news/the-business-of-sweat-how-hyrox-built-a-global-fitness-phenomenon/">Lawrence Stephens</a></div>
+  <span class="page-num">8</span>
+</div>
+
+<!-- SLIDE 9: Financial Analysis -->
+<div class="slide">
+  <h1>Financial Analysis: Estimated P&amp;L (2025)</h1>
+  <table>
+    <tr><th>Metric</th><th>Estimate</th><th>Notes</th></tr>
+    <tr><td><strong>Total Revenue</strong></td><td>~$140M</td><td>100% YoY growth for 2 consecutive years</td></tr>
+    <tr><td>Race Entry Revenue</td><td>~$55&ndash;75M</td><td>650K participants &times; avg. $85&ndash;115</td></tr>
+    <tr><td>Gym Affiliation Revenue</td><td>~$7.5M</td><td>5,000 gyms &times; $1,500/yr</td></tr>
+    <tr><td>Sponsorship Revenue</td><td>~$15&ndash;25M</td><td>PUMA, Red Bull, Peloton, others</td></tr>
+    <tr><td>Ancillary Revenue</td><td>~$30&ndash;40M</td><td>Photo packages, spectator tickets, merch</td></tr>
+    <tr><td><strong>EBITDA Margin</strong></td><td><strong>~30&ndash;40%</strong></td><td>Parent Upsolut Sports: ~26% net margin (2021)</td></tr>
+    <tr><td><strong>Estimated EBITDA</strong></td><td><strong>~$42&ndash;56M</strong></td><td></td></tr>
+    <tr><td>Paid Marketing Spend</td><td><strong>$0</strong></td><td>Entirely organic / community-driven</td></tr>
+    <tr><td>Employees</td><td>~231</td><td>Revenue/employee: ~$606K</td></tr>
+  </table>
+  <div class="highlight"><strong>Breakeven per event:</strong> ~1,500 participants. <strong>Actual avg.:</strong> ~7,800 &mdash; well above breakeven.</div>
+  <div class="source">Sources: <a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial</a>, <a href="https://www.smartcompany.com.au/finance/financial-teardown-hyrox-turned-training-140-million-global-sport/">SmartCompany</a></div>
+  <span class="page-num">9</span>
+</div>
+
+<!-- SLIDE 10: Unit Economics -->
+<div class="slide">
+  <h1>Unit Economics: The Event Machine</h1>
+  <h2>Operational Model: "Trucks &amp; Trade Fairs"</h2>
+  <ul>
+    <li><strong>10 mobile event setups</strong> circulate globally</li>
+    <li>Each setup: <strong>9 trucks</strong> carrying all equipment</li>
+    <li>Setup time: <strong>36&ndash;48 hours</strong> per venue</li>
+    <li>Result: <strong>175 revenue-generating event days/year</strong></li>
+  </ul>
+  <h2>Per-Event Economics (Estimated)</h2>
+  <table>
+    <tr><th></th><th>Conservative</th><th>Optimistic</th></tr>
+    <tr><td><strong>Participants</strong></td><td>5,000</td><td>10,000</td></tr>
+    <tr><td><strong>Avg. Revenue/Participant</strong></td><td>$150 (incl. ancillary)</td><td>$200</td></tr>
+    <tr><td><strong>Gross Revenue/Event</strong></td><td>$750K</td><td>$2.0M</td></tr>
+    <tr><td><strong>Venue &amp; Setup Costs</strong></td><td>~$200K</td><td>~$300K</td></tr>
+    <tr><td><strong>Gross Margin/Event</strong></td><td>~$550K (73%)</td><td>~$1.7M (85%)</td></tr>
+  </table>
+  <blockquote>The asset-light, mobile model means HYROX can enter new markets with minimal upfront capex &mdash; a "pop-up franchise" for sports events.</blockquote>
+  <span class="page-num">10</span>
+</div>
+
+<!-- SLIDE 11: Growth Trajectory -->
+<div class="slide">
+  <h1>Historical Growth Trajectory</h1>
+  <table>
+    <tr><th>Season</th><th>Events</th><th>Participants</th><th>Countries</th><th>YoY Growth</th></tr>
+    <tr><td><strong>2018</strong> (S1)</td><td>5</td><td>2,711</td><td>2</td><td>&mdash;</td></tr>
+    <tr><td><strong>2019</strong> (S2)</td><td>12</td><td>~10,000</td><td>3</td><td>~269%</td></tr>
+    <tr><td><strong>2020&ndash;21</strong> (S3)</td><td>Limited</td><td>Reduced</td><td>&mdash;</td><td>COVID impact</td></tr>
+    <tr><td><strong>2022&ndash;23</strong> (S5)</td><td>45</td><td>~100,000</td><td>16</td><td>Recovery + boom</td></tr>
+    <tr><td><strong>2023&ndash;24</strong> (S6)</td><td>65</td><td>175,000</td><td>20+</td><td>75%</td></tr>
+    <tr><td><strong>2024&ndash;25</strong> (S7)</td><td>83</td><td>650,000</td><td>30</td><td><strong>271%</strong></td></tr>
+    <tr><td><strong>2025&ndash;26</strong> (S8, proj.)</td><td>130+</td><td>1,300,000</td><td>30+</td><td><strong>100%</strong></td></tr>
+  </table>
+
+  <h2>Participant Growth Visualization</h2>
+  <div class="bar"><span class="bar-label">S1 (2018)</span><div class="bar-track"><div class="bar-fill" style="width:0.4%;background:#c8102e;">2.7K</div></div></div>
+  <div class="bar"><span class="bar-label">S2 (2019)</span><div class="bar-track"><div class="bar-fill" style="width:1.5%;background:#c8102e;">10K</div></div></div>
+  <div class="bar"><span class="bar-label">S5 (22-23)</span><div class="bar-track"><div class="bar-fill" style="width:8%;background:#c8102e;">100K</div></div></div>
+  <div class="bar"><span class="bar-label">S6 (23-24)</span><div class="bar-track"><div class="bar-fill" style="width:13%;background:#c8102e;">175K</div></div></div>
+  <div class="bar"><span class="bar-label">S7 (24-25)</span><div class="bar-track"><div class="bar-fill" style="width:50%;background:#c8102e;">650K</div></div></div>
+  <div class="bar"><span class="bar-label">S8 (25-26)</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:#1a1a2e;">1.3M (projected)</div></div></div>
+
+  <div class="source">Sources: <a href="https://hyrox.com/the-history/">HYROX History</a>, <a href="https://sustainhealth.fit/lifestyle/hyrox-expands-2025-26-calendar-with-47-new-races-amid-global-fitness-boom/">SustainHealth</a>, <a href="https://en.wikipedia.org/wiki/Hyrox">Wikipedia</a></div>
+  <span class="page-num">11</span>
+</div>
+
+<!-- SLIDE 12: Market Opportunity -->
+<div class="slide">
+  <h1>Market Opportunity: The "Fitness Gap"</h1>
+  <p>The global fitness industry has <strong>~200 million gym members</strong>, yet competitive participation events serve only niche segments:</p>
+  <table>
+    <tr><th>Segment</th><th>Annual Participants</th><th>Barrier to Entry</th></tr>
+    <tr><td>Marathon Running</td><td>~10M globally</td><td>High endurance required</td></tr>
+    <tr><td>CrossFit Open</td><td>~234K (2025, declining)</td><td>Technical skills, intimidating culture</td></tr>
+    <tr><td>Spartan Race</td><td>~1M annually</td><td>Outdoor obstacles, physical risk</td></tr>
+    <tr><td>Triathlon</td><td>~4M globally</td><td>Equipment cost, swim requirement</td></tr>
+    <tr><td style="background:#fff8e1;"><strong>HYROX</strong></td><td style="background:#fff8e1;"><strong>650K (growing 100%+ YoY)</strong></td><td style="background:#fff8e1;"><strong>Low &mdash; gym-style movements, no qualification</strong></td></tr>
+  </table>
+  <div class="highlight"><strong>Total Addressable Market:</strong> If 52% of gym-goers consider "fitness" their primary sport, HYROX's TAM is potentially <strong>100M+ people</strong> &mdash; the brand is at &lt;1% penetration.</div>
+  <div class="source">Sources: <a href="https://www.gym-flooring.com/blogs/stats-hub/hyrox-stats">Gym-Flooring Stats</a>, <a href="https://en.wikipedia.org/wiki/Hyrox">Wikipedia</a></div>
+  <span class="page-num">12</span>
+</div>
+
+<!-- SLIDE 13: Target Customer -->
+<div class="slide">
+  <h1>Target Customer Profile</h1>
+  <div class="two-col">
+    <div>
+      <h2>Demographics</h2>
+      <ul>
+        <li><strong>Age:</strong> Core 25&ndash;45; 65%+ over 30</li>
+        <li><strong>Gender:</strong> 62% male / 38% female</li>
+        <li><strong>Profile:</strong> Gym-goers, recreational runners, hybrid athletes</li>
+        <li><strong>Income:</strong> Middle to upper-middle</li>
+        <li><strong>Oldest finisher:</strong> 74 years old</li>
+      </ul>
+      <h2>Psychographics</h2>
+      <ul>
+        <li>Seek measurable fitness goals beyond aesthetics</li>
+        <li>Value community and social experiences</li>
+        <li>Active on social media</li>
+        <li>Prefer structured, predictable challenges</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Spending Behavior</h2>
+      <ul>
+        <li><strong>70%</strong> buy race photo packages</li>
+        <li>High travel propensity (destination racing)</li>
+        <li>Invest in HYROX-specific training &amp; gear</li>
+        <li>Strong repeat participation rates</li>
+      </ul>
+      <h2>Viral Indicators</h2>
+      <ul>
+        <li>Google searches: <strong>+233% YoY</strong></li>
+        <li>#HYROX on TikTok: <strong>55M+ views</strong></li>
+        <li>70% of participants are first-timers &mdash; massive top-of-funnel</li>
+        <li>Indoor venues produce highly shareable photos</li>
+      </ul>
+    </div>
+  </div>
+  <div class="source">Sources: <a href="https://www.gym-flooring.com/blogs/stats-hub/hyrox-stats">Gym-Flooring Stats</a>, <a href="https://hyroxdatalab.com/articles/age-group-performance-analysis">HYROX Data Lab</a></div>
+  <span class="page-num">13</span>
+</div>
+
+<!-- SLIDE 14: Competitive Landscape -->
+<div class="slide">
+  <h1>Competitive Landscape</h1>
+  <table>
+    <tr><th></th><th>HYROX</th><th>CrossFit</th><th>Spartan Race</th><th>Tough Mudder</th></tr>
+    <tr><td><strong>Founded</strong></td><td>2017</td><td>2000</td><td>2010</td><td>2010</td></tr>
+    <tr><td><strong>Format</strong></td><td>Standardized indoor</td><td>Varied WODs</td><td>Outdoor obstacles</td><td>Outdoor obstacles</td></tr>
+    <tr><td><strong>Annual Participants</strong></td><td>650K+</td><td>~2&ndash;4M members</td><td>~1M</td><td>~500K</td></tr>
+    <tr><td><strong>Est. Revenue</strong></td><td>~$140M</td><td>~$100M</td><td>~$100&ndash;160M</td><td>Acquired by Spartan</td></tr>
+    <tr><td><strong>Affiliate Gyms</strong></td><td>5,000</td><td>~10,000</td><td>N/A</td><td>N/A</td></tr>
+    <tr><td><strong>Affiliation Fee</strong></td><td>$1,500/yr</td><td>$3,000&ndash;4,500/yr</td><td>N/A</td><td>N/A</td></tr>
+    <tr><td><strong>Skill Barrier</strong></td><td>Low</td><td>High</td><td>Medium</td><td>Medium</td></tr>
+    <tr><td><strong>Completion Rate</strong></td><td>99%</td><td>Qualification for elite</td><td>Penalty for failure</td><td>Team-based</td></tr>
+    <tr><td><strong>Trend</strong></td><td style="color:green; font-weight:700;">&#9650;&#9650;&#9650; Rapid growth</td><td style="color:#c00;">&#9660; Declining</td><td>&#9654; Stable</td><td>&#9654; Acquired</td></tr>
+  </table>
+  <div class="source">Sources: <a href="https://media.market.us/crossfit-statistics/">CrossFit Statistics</a>, <a href="https://www.trainrox.com/articles/hyrox-vs-crossfit-vs-spartan/">TrainRox</a>, <a href="https://growjo.com/company/Spartan_Race">Growjo</a></div>
+  <span class="page-num">14</span>
+</div>
+
+<!-- SLIDE 15: Competitive Moat -->
+<div class="slide">
+  <h1>Competitive Advantages: The HYROX Moat</h1>
+  <h2>1. Standardization as Network Effect</h2>
+  <p>Every race is identical &rarr; global leaderboard &rarr; more athletes compare &rarr; more demand &rarr; stronger brand. A <strong>self-reinforcing flywheel</strong>.</p>
+  <h2>2. Asset-Light "Pop-Up" Model</h2>
+  <p>Mobile truck-based setups enable rapid expansion into new cities with minimal capex &mdash; unlike building permanent venues.</p>
+  <h2>3. Community-Driven Growth ($0 Marketing)</h2>
+  <p>The product markets itself through social sharing, gym affiliations, and word-of-mouth. 70% of participants are first-timers brought by friends or social media.</p>
+  <h2>4. Gym Affiliate Ecosystem</h2>
+  <p>5,000 affiliated gyms serve as a <strong>distributed sales channel</strong> &mdash; coaches train athletes for HYROX, driving registrations. The gym pays HYROX, not the reverse.</p>
+  <h2>5. Inclusive by Design</h2>
+  <p>99% completion rate removes the intimidation factor. "The fitness competition for Every Body" is strategic positioning, not just a tagline.</p>
+  <span class="page-num">15</span>
+</div>
+
+<!-- SLIDE 16: Corporate Structure -->
+<div class="slide">
+  <h1>Corporate Structure &amp; Ownership</h1>
+  <pre>
+  ┌────────────────────────────────┐
+  │      Dalian Wanda Group        │  Chinese conglomerate
+  │      (Parent Company)          │  Acquired Infront for &euro;1.05B (2015)
+  └──────────────┬─────────────────┘
+                 │ Majority Owner
+                 ▼
+  ┌────────────────────────────────┐
+  │   Infront Sports &amp; Media      │  Revenue &gt;&euro;1.2B (2025)
+  │   (Zug, Switzerland)           │  Also manages: Ironman, B2Run,
+  │                                │  XLETIX, Muddy Angels, Megamarsch
+  └──────────────┬─────────────────┘
+                 │ Majority Stake (Oct 2022)
+                 │ Initial investment: Dec 2019
+                 ▼
+  ┌────────────────────────────────┐
+  │         HYROX World            │  ~$140M revenue, ~231 employees
+  │    (Hamburg, Germany)           │  Founding team retains operational
+  │                                │  autonomy &amp; commercial decisions
+  └────────────────────────────────┘
+  </pre>
+  <p><strong>Key:</strong> HYROX founding team retains majority control over commercial decisions despite Infront's majority ownership &mdash; preserving entrepreneurial agility within a corporate structure.</p>
+  <div class="source">Sources: <a href="https://www.infront.sport/news/participation-sports/infront-bolsters-fitness-portfolio-through-further-hyrox-investment">Infront Sports</a>, <a href="https://en.wikipedia.org/wiki/Infront_Sports_%26_Media">Wikipedia: Infront</a>, <a href="https://www.mcfcorpfin.com/news/mcf-advises-hyrox-on-receiving-a-strategic-investment-from-infront-sports-media/">MCF Corporate Finance</a></div>
+  <span class="page-num">16</span>
+</div>
+
+<!-- SLIDE 17: Strategic Partnerships -->
+<div class="slide">
+  <h1>Strategic Partnerships</h1>
+  <table>
+    <tr><th>Partner</th><th>Type</th><th>Details</th></tr>
+    <tr><td><strong>PUMA</strong></td><td>Global Apparel/Footwear</td><td>Multi-year deal (2024&ndash;2027); official race gear</td></tr>
+    <tr><td><strong>Red Bull</strong></td><td>Official Energy Partner</td><td>Since Season 3 (2020&ndash;2021); event activation and media</td></tr>
+    <tr><td><strong>Peloton</strong></td><td>Content Partnership</td><td>12-week HYROX Training Program for Peloton members</td></tr>
+    <tr><td><strong>World Triathlon</strong></td><td>Federation Recognition</td><td>HYROX recognized as newest discipline under World Triathlon</td></tr>
+    <tr><td><strong>Concept2</strong></td><td>Equipment Partner</td><td>Official rowing machines and Ski Ergs at all events</td></tr>
+    <tr><td><strong>5,000+ Gyms</strong></td><td>Distribution Network</td><td>Affiliated gyms globally offering HYROX-specific training classes</td></tr>
+  </table>
+  <h2>Partnership Strategy</h2>
+  <p>HYROX selects partners that <strong>extend its training ecosystem</strong> (Peloton, gyms) or <strong>enhance event experience</strong> (PUMA, Red Bull) rather than pursuing maximum sponsorship dollars &mdash; prioritizing brand alignment over short-term revenue optimization.</p>
+  <div class="source">Sources: <a href="https://athletechnews.com/peloton-hyrox-content-partnership-12-week-series-nyc-race/">Athletech News</a>, <a href="https://www.infront.sport/blog/participation-sports/hyrox-the-meteoric-rise-of-a-global-fitness-racing-phenomenon">Infront Sports</a></div>
+  <span class="page-num">17</span>
+</div>
+
+<!-- SLIDE 18: $0 Marketing -->
+<div class="slide">
+  <h1>Marketing Strategy: The $0 Playbook</h1>
+  <p><strong>How HYROX achieved 100% YoY growth with zero paid marketing:</strong></p>
+  <div class="two-col">
+    <div>
+      <h2>1. The Product IS the Marketing</h2>
+      <ul>
+        <li>Indoor, photogenic venues &rarr; high-quality race photos</li>
+        <li>70% buy photo packages &rarr; share on social media</li>
+        <li>#HYROX on TikTok: 55M+ views</li>
+        <li>Google searches: +233% YoY</li>
+      </ul>
+      <h2>2. Gym Affiliates as Sales Force</h2>
+      <ul>
+        <li>5,000 gyms promote HYROX training</li>
+        <li>Coaches become brand ambassadors</li>
+        <li>HYROX classes = recurring touchpoints</li>
+      </ul>
+    </div>
+    <div>
+      <h2>3. Scarcity &amp; Social Proof</h2>
+      <ul>
+        <li>NYC sold out in <strong>40 minutes</strong></li>
+        <li>London: 70K applicants for 16K slots</li>
+        <li>Scarcity drives urgency; FOMO fuels demand</li>
+      </ul>
+      <h2>4. Community Flywheel</h2>
+      <ul>
+        <li>70% are first-timers brought by friends</li>
+        <li>Doubles/Relay format requires recruiting partners</li>
+        <li>Post-race social sharing completes the viral loop</li>
+      </ul>
+    </div>
+  </div>
+  <div class="highlight"><strong>The flywheel:</strong> Athletes train at affiliated gym &rarr; race &rarr; buy photos &rarr; share on social &rarr; friends sign up &rarr; train at gym &rarr; repeat.</div>
+  <span class="page-num">18</span>
+</div>
+
+<!-- SLIDE 19: Future Strategy -->
+<div class="slide">
+  <h1>Future Strategy: 2026 and Beyond</h1>
+  <div class="two-col">
+    <div>
+      <h2>Near-Term (2025&ndash;2026)</h2>
+      <ul>
+        <li><strong>130+ events</strong> planned for Season 8</li>
+        <li>Expansion into <strong>India, Brazil</strong>, new US cities</li>
+        <li><strong>HYROX Youngstars:</strong> Youth events for children &amp; teens</li>
+        <li><strong>London Week of Fitness:</strong> 6-day flagship event</li>
+        <li><strong>Flex Ticketing System:</strong> Regional drops</li>
+        <li><strong>Coaches Summit:</strong> March 2026, London</li>
+        <li><strong>1.3M projected participants</strong></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Long-Term Vision</h2>
+      <ul>
+        <li><strong>Olympic Recognition:</strong> Now under World Triathlon; targeting 2032+ Games</li>
+        <li><strong>5M+ annual participants</strong> (matching CrossFit scale)</li>
+        <li><strong>10,000+ gym affiliates</strong> globally</li>
+        <li><strong>Media &amp; broadcast</strong> expansion</li>
+        <li><strong>$500M+ revenue potential</strong> in bull case</li>
+      </ul>
+      <h2>The Bull Case</h2>
+      <p>HYROX can still <strong>3&ndash;5x from here</strong>. If it achieves Olympic status, it could become a $500M&ndash;$1B revenue business.</p>
+    </div>
+  </div>
+  <div class="source">Sources: <a href="https://sustainhealth.fit/lifestyle/hyrox-expands-2025-26-calendar-with-47-new-races-amid-global-fitness-boom/">SustainHealth</a>, <a href="https://athletechnews.com/fitness-racing-takes-off-hyrox-olympics/">Athletech News</a></div>
+  <span class="page-num">19</span>
+</div>
+
+<!-- SLIDE 20: Implied Valuation -->
+<div class="slide">
+  <h1>Implied Valuation Analysis</h1>
+  <h2>Comparable Transactions</h2>
+  <table>
+    <tr><th>Company</th><th>Valuation</th><th>Revenue Multiple</th><th>Context</th></tr>
+    <tr><td>CrossFit</td><td>$4.0B (2018)</td><td>~40x</td><td>At peak hype; later sold at steep discount</td></tr>
+    <tr><td>Spartan Race</td><td>~$250&ndash;400M (est.)</td><td>~2&ndash;3x</td><td>Mature, lower-growth</td></tr>
+    <tr><td>Peloton</td><td>$8.1B (2024)</td><td>~3x</td><td>Post-correction</td></tr>
+  </table>
+  <h2>Estimated HYROX Valuation Range</h2>
+  <table>
+    <tr><th>Method</th><th>Multiple</th><th>Implied Valuation</th></tr>
+    <tr><td>Revenue (conservative)</td><td>5x $140M</td><td><strong>$700M</strong></td></tr>
+    <tr><td>Revenue (growth premium)</td><td>10x $140M</td><td><strong>$1.4B</strong></td></tr>
+    <tr><td>EBITDA (moderate)</td><td>15x ~$50M</td><td><strong>$750M</strong></td></tr>
+    <tr><td>EBITDA (high-growth)</td><td>25x ~$50M</td><td><strong>$1.25B</strong></td></tr>
+  </table>
+  <div class="highlight"><strong>Estimated Range: $700M &ndash; $1.4B</strong> &mdash; a potential unicorn with only $5.52M in external capital raised.</div>
+  <p style="font-size:0.75em; color:#888; margin-top:8px;"><em>Note: All figures are estimates based on publicly available information and comparable analysis.</em></p>
+  <span class="page-num">20</span>
+</div>
+
+<!-- SLIDE 21: Capital Efficiency -->
+<div class="slide">
+  <h1>Capital Efficiency: A Remarkable Story</h1>
+  <h2>$5.52M In &rarr; ~$140M Revenue Out</h2>
+  <table>
+    <tr><th>Metric</th><th>HYROX</th><th>Typical VC-Backed Startup</th></tr>
+    <tr><td><strong>Total Capital Raised</strong></td><td>$5.52M</td><td>$50&ndash;200M+ at this revenue</td></tr>
+    <tr><td><strong>Revenue</strong></td><td>~$140M</td><td>Varies</td></tr>
+    <tr><td><strong>Capital Efficiency Ratio</strong></td><td><strong>25x</strong></td><td>0.5&ndash;3x typical</td></tr>
+    <tr><td><strong>Paid Marketing Spend</strong></td><td>$0</td><td>30&ndash;50% of revenue</td></tr>
+    <tr><td><strong>Path to Profitability</strong></td><td>Profitable from early stages</td><td>Often 5&ndash;10 years</td></tr>
+    <tr><td><strong>Burn Rate</strong></td><td>Negligible</td><td>$5&ndash;20M/month</td></tr>
+  </table>
+  <h2>Why So Capital-Efficient?</h2>
+  <ol>
+    <li>Asset-light model (rent venues, mobile equipment)</li>
+    <li>Zero paid marketing (community-driven)</li>
+    <li>Pre-paid revenue (entry fees collected before events)</li>
+    <li>Low fixed costs (231 employees for $140M revenue)</li>
+    <li>Cash-flow positive events subsidize expansion</li>
+  </ol>
+  <span class="page-num">21</span>
+</div>
+
+<!-- SLIDE 22: SWOT -->
+<div class="slide">
+  <h1>SWOT Analysis</h1>
+  <div class="swot-grid">
+    <div class="s">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Standardized format &rarr; global comparability</li>
+        <li>$0 paid marketing &rarr; exceptional CAC</li>
+        <li>30&ndash;40% EBITDA margins</li>
+        <li>99% completion rate &rarr; mass accessibility</li>
+        <li>Strong founder-operator team with autonomy</li>
+        <li>Asset-light mobile operations</li>
+      </ul>
+    </div>
+    <div class="w">
+      <h3>Weaknesses</h3>
+      <ul>
+        <li>Indoor venue reliance limits capacity</li>
+        <li>Limited brand awareness outside fitness</li>
+        <li>Concentrated ownership (Wanda/Infront)</li>
+        <li>Narrow product line (single race format)</li>
+        <li>Geographic concentration in Europe</li>
+      </ul>
+    </div>
+    <div class="o">
+      <h3>Opportunities</h3>
+      <ul>
+        <li>Olympic inclusion via World Triathlon</li>
+        <li>TAM of 100M+ gym-goers globally</li>
+        <li>Youth market (HYROX Youngstars)</li>
+        <li>Media/broadcast monetization</li>
+        <li>Emerging markets (APAC, LATAM, ME)</li>
+        <li>Training content &amp; digital platforms</li>
+      </ul>
+    </div>
+    <div class="t">
+      <h3>Threats</h3>
+      <ul>
+        <li>Copycats (DEKA FIT by Spartan)</li>
+        <li>Fitness trend fatigue / fad risk</li>
+        <li>Economic downturn reducing discretionary spend</li>
+        <li>Venue availability constraints at scale</li>
+        <li>Potential safety incidents</li>
+        <li>Wanda Group geopolitical risks</li>
+      </ul>
+    </div>
+  </div>
+  <span class="page-num">22</span>
+</div>
+
+<!-- SLIDE 23: Peer Benchmarks -->
+<div class="slide">
+  <h1>Key Financial Benchmarks vs. Peers</h1>
+  <table>
+    <tr><th>Metric</th><th>HYROX</th><th>CrossFit</th><th>Spartan Race</th></tr>
+    <tr><td><strong>Est. Revenue (2025)</strong></td><td>~$140M</td><td>~$100M (company)</td><td>~$100&ndash;160M</td></tr>
+    <tr><td><strong>Revenue Growth</strong></td><td style="color:green; font-weight:700;">~100% YoY</td><td style="color:#c00;">Declining</td><td>Stable</td></tr>
+    <tr><td><strong>Est. EBITDA Margin</strong></td><td>30&ndash;40%</td><td>Not disclosed</td><td>Not disclosed</td></tr>
+    <tr><td><strong>Paid Marketing</strong></td><td><strong>$0</strong></td><td>Moderate</td><td>Significant</td></tr>
+    <tr><td><strong>Participants (Annual)</strong></td><td>650K</td><td>~234K (Open)</td><td>~1M</td></tr>
+    <tr><td><strong>Participant Growth</strong></td><td style="color:green; font-weight:700;">+271% YoY</td><td style="color:#c00;">-30% YoY</td><td>Flat</td></tr>
+    <tr><td><strong>Affiliated Gyms</strong></td><td>5,000</td><td>~10,000</td><td>N/A</td></tr>
+    <tr><td><strong>Affiliation Fee</strong></td><td>$1,500</td><td>$3,000&ndash;4,500</td><td>N/A</td></tr>
+    <tr><td><strong>External Funding</strong></td><td>$5.52M</td><td>Minimal</td><td>$25.9M</td></tr>
+    <tr><td><strong>Revenue/Employee</strong></td><td>~$606K</td><td>N/A</td><td>N/A</td></tr>
+  </table>
+  <div class="source">Sources: <a href="https://media.market.us/crossfit-statistics/">CrossFit Statistics</a>, <a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial</a>, <a href="https://growjo.com/company/Spartan_Race">Growjo</a></div>
+  <span class="page-num">23</span>
+</div>
+
+<!-- SLIDE 24: Risk Factors -->
+<div class="slide">
+  <h1>Risk Factors</h1>
+  <h2>1. Fad Risk</h2>
+  <p>Is HYROX a durable sport or a fitness trend? <strong>Mitigants:</strong> Standardized format creates lasting habits; World Triathlon recognition signals institutional legitimacy.</p>
+  <h2>2. Competitive Response</h2>
+  <p>Spartan launched DEKA FIT with a similar format. CrossFit could pivot. <strong>Mitigant:</strong> First-mover advantage, 5,000-gym ecosystem, brand loyalty.</p>
+  <h2>3. Wanda / Geopolitical Risk</h2>
+  <p>Chinese ownership could create regulatory or reputational challenges. Wanda ended its strategic review in 2026, retaining Infront.</p>
+  <h2>4. Venue Constraints</h2>
+  <p>Scaling beyond 130+ events requires sufficient large indoor venues. Some markets may face capacity ceilings.</p>
+  <h2>5. Safety &amp; Liability</h2>
+  <p>A serious incident (cf. CrossFit Games 2024) could damage brand and participation. Mitigated by low-skill, self-paced format.</p>
+  <h2>6. Single-Product Concentration</h2>
+  <p>HYROX is essentially one product. Diversification (Youngstars, digital) is nascent.</p>
+  <span class="page-num">24</span>
+</div>
+
+<!-- SLIDE 25: Discussion Questions -->
+<div class="slide">
+  <h1>Discussion Questions</h1>
+  <ol>
+    <li><strong>Category Creation:</strong> HYROX invented "Fitness Racing." What are the advantages and risks of creating a new sport category vs. competing within an existing one?</li>
+    <li><strong>$0 Marketing:</strong> Is the zero-paid-marketing strategy sustainable as HYROX scales from 650K to 5M+ participants? At what point should they invest in paid acquisition?</li>
+    <li><strong>Olympic Strategy:</strong> Is pursuing Olympic recognition the right priority, or does it introduce governance constraints that could undermine the business?</li>
+    <li><strong>Valuation:</strong> Would you invest at a $1B valuation? What are your key due diligence questions?</li>
+    <li><strong>Competitive Moat:</strong> How durable is the advantage? Could a well-funded competitor replicate the format?</li>
+    <li><strong>Growth vs. Exclusivity:</strong> Should HYROX accelerate supply (more events) or maintain scarcity to preserve brand premium?</li>
+    <li><strong>Gym Affiliate Pricing:</strong> At $1,500/yr vs. CrossFit's $3,000&ndash;$4,500, is HYROX under-monetizing its network?</li>
+    <li><strong>Emerging Markets:</strong> What are the key challenges of scaling a premium fitness brand into India, Brazil, and the Middle East?</li>
+  </ol>
+  <span class="page-num">25</span>
+</div>
+
+<!-- SLIDE 26: Key Takeaway -->
+<div class="slide cover">
+  <h1 style="font-size:1.8em;">Key Takeaway</h1>
+  <p style="font-size:1.1em; max-width: 800px; line-height: 1.8; color: #ccc;">
+    HYROX represents a rare case in sports business: a <strong style="color:#c8102e;">category-creating, capital-efficient, community-driven</strong> enterprise that achieved $140M in revenue with $5.52M in funding and $0 in paid marketing.
+  </p>
+  <p style="font-size:1em; max-width: 800px; line-height: 1.7; color: #aaa; margin-top: 20px;">
+    The strategic question is whether HYROX is <strong style="color:#fff;">the next marathon</strong> &mdash; a permanent fixture in global fitness culture &mdash; or <strong style="color:#fff;">the next CrossFit</strong> &mdash; a powerful trend that eventually plateaus.
+  </p>
+  <p style="font-size:0.9em; color: #666; margin-top: 30px;">The answer depends on Olympic recognition, management execution, and whether "Fitness Racing" proves to be a durable sport category or a generational fitness fad.</p>
+</div>
+
+<!-- SLIDE 27: Sources -->
+<div class="slide">
+  <h1>Sources &amp; References</h1>
+  <ul style="font-size: 0.78em; line-height: 1.9;">
+    <li><a href="https://sbo.financial/blog/financial-teardowns/the-business-of-hyrox-how-fitness-racing-became-a-140m-beast/">SBO Financial: How Fitness Racing Became a $140M Beast</a></li>
+    <li><a href="https://www.smartcompany.com.au/finance/financial-teardown-hyrox-turned-training-140-million-global-sport/">SmartCompany: Financial Teardown of Hyrox</a></li>
+    <li><a href="https://www.infront.sport/blog/participation-sports/hyrox-the-meteoric-rise-of-a-global-fitness-racing-phenomenon">Infront Sports: The Meteoric Rise of HYROX</a></li>
+    <li><a href="https://hyrox.com/the-history/">HYROX Official: The History</a></li>
+    <li><a href="https://hybridfitnessmedia.com/2025/01/24/hyrox-growth-and-expansion-2018-present/">Hybrid Fitness Media: HYROX Growth &amp; Expansion</a></li>
+    <li><a href="https://www.lawrencestephens.com/news/the-business-of-sweat-how-hyrox-built-a-global-fitness-phenomenon/">Lawrence Stephens: The Business of Sweat</a></li>
+    <li><a href="https://athletechnews.com/fitness-racing-takes-off-hyrox-olympics/">Athletech News: HYROX Going All-In on Olympics</a></li>
+    <li><a href="https://sustainhealth.fit/lifestyle/hyrox-expands-2025-26-calendar-with-47-new-races-amid-global-fitness-boom/">SustainHealth: HYROX 2025/26 Expansion</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Hyrox">Wikipedia: Hyrox</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Infront_Sports_%26_Media">Wikipedia: Infront Sports &amp; Media</a></li>
+    <li><a href="https://media.market.us/crossfit-statistics/">CrossFit Statistics (Market.us)</a></li>
+    <li><a href="https://www.cnbc.com/video/2025/05/28/the-business-boom-of-hyrox-a-new-fitness-competition.html">CNBC: The Business Boom of Hyrox</a></li>
+    <li><a href="https://www.redbull.com/us-en/hyrox-exercise-stations-guide">Red Bull: HYROX Exercise Stations Guide</a></li>
+    <li><a href="https://growjo.com/company/HYROX">Growjo: HYROX Revenue &amp; Competitors</a></li>
+    <li><a href="https://www.crunchbase.com/organization/hyrox">Crunchbase: HYROX</a></li>
+    <li><a href="https://www.mcfcorpfin.com/news/mcf-advises-hyrox-on-receiving-a-strategic-investment-from-infront-sports-media/">MCF Corporate Finance: HYROX Advisory</a></li>
+  </ul>
+  <span class="page-num">26</span>
+</div>
+
+<!-- SLIDE 28: Thank You -->
+<div class="slide cover">
+  <h1 style="font-size: 2.5em;">Thank You</h1>
+  <p style="color: #888; font-size: 1em; margin-top: 20px;"><strong>The Wharton School | University of Pennsylvania</strong></p>
+  <p style="color: #666; font-size: 0.85em; margin-top: 10px;"><em>Case prepared for academic discussion purposes.</em></p>
+  <p style="color: #666; font-size: 0.85em;"><em>Financial figures are estimates based on publicly available information.</em></p>
+  <p style="color: #555; font-size: 0.85em; margin-top: 10px;">March 2026</p>
+</div>
+
+</body>
+</html>
